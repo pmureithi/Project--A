@@ -1,0 +1,275 @@
+/* Header */
+
+.hero {
+    background: #08c440;
+    color: whitesmoke;
+    padding: 25px 5% 55px;
+    border-radius: 150px 130px 140px 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2 {
+    font-size: 24px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.nav-button {
+    background: white;
+    color: #186323;
+    padding: 12px 18px;
+    border-radius: 25px;
+}
+
+/* Hero Content */
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin-top: 65px;
+}
+
+.hero-content h1 {
+    font-size: clamp(32px, 5vw, 52px);
+    line-height: 1.1;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    max-width: 350px;
+    line-height: 1.7;
+}
+
+/* Water Bottles */
+
+.bottles {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.bottle {
+    width: 70px;
+    height: 120px;
+    background: #7ffa67;
+    border: 3px solid white;
+    border-radius: 18px;
+}
+
+.bottle.large {
+    height: 175px;
+    width: 90px;
+    background: #c4e715;
+}
+
+/* Why Us */
+
+.why-us {
+    padding: 55px 5%;
+    text-align: center;
+}
+
+.why-us > h2 {
+    font-size: 30px;
+    margin-bottom: 45px;
+    color: #186323;
+}
+
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.feature span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #e0f2ff;
+    color: #186323;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    font-size: 23px;
+    margin-bottom: 15px;
+}
+
+.feature h3 {
+    margin-bottom: 12px;
+}
+
+.feature p {
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/* Order Section */
+
+.order-section {
+    background: #e1f3ff;
+    padding: 55px 20px;
+    border-radius: 140px 140px 140px 140px;
+}
+
+.order-card {
+    background: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px #12365315;
+}
+
+.order-cup > h2 {
+    margin-bottom: 30px;
+    color: #186323;
+    text-align: center;
+}
+
+.product-row,
+.total-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.product-row h4,
+.order-cup > h4 {
+    margin-bottom: 8px;
+}
+
+.order-cup p {
+    font-size: 13px;
+    color: #61788b;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.quantity button {
+    background: #dff2ff;
+    color: #08c440;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+#quantity {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+hr {
+    border: none;
+    border-top: 2px dotted #c5e4f8;
+    margin: 25px 0;
+}
+
+/* Delivery Days */
+
+.days {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.day {
+    padding: 10px 14px;
+    border: 1px solid #08c440;
+    background: whitesmoke;
+    color: #08c440;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.day.active {
+    background: #0aa94f;
+    color: white;
+}
+
+/* Total and Order Button */
+
+.total-row h2 {
+    margin-bottom: 8px;
+}
+
+#place-order {
+    background: #08c440;
+    color: whitesmoke;
+    padding: 13px 22px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#place-order:hover {
+    background: #0aa94f;
+}
+
+#message {
+    margin-top: 20px;
+    color: #0aa94f;
+    font-weight: bold;
+}
+
+/* Mobile Screen */
+
+@media (max-width: 600px) {
+
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .bottles {
+        align-self: center;
+    }
+
+    .features {
+        grid-template-columns: 1fr;
+    }
+
+    .order-card {
+        padding: 20px;
+    }
+
+    .total-row {
+        align-items: flex-start;
+    }
+
+    #place-order {
+        padding: 12px;
+    }
+}
+footer {
+    border-radius: 100px 0px 100px 0px;
+    background: #08c440;
+    color: whitesmoke;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    font-size: 13px;
+    margin: 8px;
+}
